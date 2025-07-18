@@ -1,0 +1,88 @@
+/* Main container */
+.viewContainer {
+  margin-top:120px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page heading */
+.viewContainer > h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+/* Individual blog card */
+.viewContainer > div {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.viewContainer > div:hover {
+  transform: translateY(-5px);
+}
+
+/* Blog title */
+.viewContainer > div h1 {
+  font-size: 24px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+/* Blog image */
+.viewContainer > div img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+/* Blog author */
+.viewContainer > div h2 {
+  font-size: 16px;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+
+.adminIcons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Color specific for edit and delete */
+.editIcon {
+  color: #3498db; /* calm blue for edit */
+}
+
+.deleteIcon {
+  color: #e74c3c; /* red for delete */
+}
+
+/* Hover effects for better visibility */
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.editIcon:hover {
+  color: #2c80b4; /* darker blue on hover */
+}
+
+.deleteIcon:hover {
+  color: #c0392b; /* darker red on hover */
+}

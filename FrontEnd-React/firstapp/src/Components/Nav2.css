@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    background-color: transparent;
+    color: white;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    color: rgb(18, 17, 17);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+}
+
+.navbar.scrolled .logo p {
+    color: rgb(13, 0, 0);
+}
+
+.container {
+    display: flex;
+    width: 98%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 25px;
+    width: auto;
+    height: auto;
+}
+
+.logo p {
+    margin: 10px 0;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(248, 244, 244);
+    text-transform: uppercase !important;
+    cursor: pointer;
+}
+
+.nav_link {
+    margin: 0 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav_link ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase !important;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.nav_link ul li:active,
+.nav_link ul li:focus {
+    text-decoration: underline;
+}
+
+.login {
+    width: auto;
+    min-width: 120px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D2937;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase !important;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.login:hover {
+    background-color: #f5784c;
+}
+
+.avatarCircle {
+    width: 50px;
+    height: 48px;
+    background: linear-gradient(135deg, #0070d2, #005bb5);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 16px;
+    margin-top: 22px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.avatarCircle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profileDropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdownMenu button {
+    padding: 10px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+.dropdownMenu button:hover {
+    background-color: #f0f0f0;
+}
+
+/* --------------- RESPONSIVENESS --------------- */
+@media (max-width: 1024px) {
+    .logo p {
+        font-size: 2.2rem;
+    }
+    .link {
+        font-size: 1.2rem;
+    }
+    .login {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav_link ul {
+        gap: 10px;
+    }
+    .logo p {
+        font-size: 2rem;
+    }
+    .link {
+        font-size: 1rem;
+    }
+    .login {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    .logo p {
+        font-size: 1.5rem;
+    }
+    .nav_link ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .login {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+    }
+}

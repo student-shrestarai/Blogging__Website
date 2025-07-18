@@ -1,0 +1,156 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.scrolled {
+    background-color: white;
+    color: black;
+}
+
+.navbar.scrolled .logo p {
+    color: black;
+}
+
+/* Container inside navbar */
+.container {
+    display: flex;
+    width: 98%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo p {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar.scrolled .logo p {
+    color: black;
+}
+
+/* Nav links */
+.nav_link {
+    margin-right: 10px;
+}
+
+.nav_link ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.link {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.login {
+    padding: 8px 16px;
+    background-color: #0D2937;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.login:hover {
+    background-color: #f5784c;
+}
+
+/* Avatar Circle */
+.avatarCircle {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #0070d2, #005bb5);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.avatarCircle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Dropdown */
+.profileDropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownMenu button {
+    padding: 10px;
+    border: none;
+    background: none;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.dropdownMenu button:hover {
+    background-color: #f0f0f0;
+}

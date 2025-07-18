@@ -1,0 +1,17 @@
+.BlogDetail{
+    margin-top:190px;
+    margin-bottom:300px;
+}
+
+.BlogDetail h1{
+     font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom:50px;
+}
+
+.BlogImage{
+    margin-bottom: 50px;
+    height:400px;
+    width:250px;
+}

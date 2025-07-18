@@ -1,0 +1,209 @@
+*{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    box-sizing: border-box;
+
+    
+}
+
+
+.navbar{
+     width:100%;
+    
+    height:100px;
+   
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+
+
+    position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  background-color: transparent;
+  color: white;
+
+}
+
+
+
+.navbar.scrolled{
+    
+    background-color:white;
+    color:rgb(18, 17, 17);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+ 
+    
+}
+
+.navbar.scrolled .logo p {
+  color: rgb(13, 0, 0); /* You can also set this to black or anything else */
+}
+
+.container{
+    display:flex;
+    width:98%;
+    margin:10px auto ;
+    /* background-color: aqua; */
+    justify-content: space-between;
+}
+
+.logo{
+    /* background-color: antiquewhite; */
+    color:black;
+    margin-left:0px;
+    margin-bottom:30px;
+    margin-left:25px;
+    width:40%;
+    height:50px;
+    
+
+}
+
+
+
+
+.logo p{
+    
+   padding-right:450px;
+    margin:10px 0px ;
+    font-size:2rem;
+    font-weight:bold;
+   font-family: 'Poppins', sans-serif;
+    color:rgb(248, 244, 244);
+    text-transform: uppercase !important;
+   
+
+}
+
+
+.nav_link{
+    /* background-color: antiquewhite; */
+     
+    margin-top:15px;
+    margin-bottom:15px;
+    width:60%;
+    margin-right:10px;
+    height:70px;
+}
+
+.nav_link ul{
+    display:flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.link{
+   
+    text-decoration: none;
+    margin-top:15px;
+    font-size: 1.2rem;
+   
+    cursor : pointer;
+font-family: 'Poppins', sans-serif;
+
+text-transform: uppercase !important;
+   
+}
+
+.links:hover{
+    text-decoration:underline;
+}
+
+
+.nav_link ul li:active,
+.nav_link ul li:focus {
+  text-decoration: underline;
+}
+
+
+
+.login {
+  width: 150px;
+  height:40.6px;
+  margin-top: 9px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0D2937;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+   font-family: 'Poppins', sans-serif;
+
+text-transform: uppercase !important;
+   font-size: 1.2rem;
+   border-color: #0d2937;
+   
+}
+
+.login:hover {
+  background-color: #f5784c;
+  border-color: #f5784c;
+}
+
+
+
+
+.profileDropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdownMenu button {
+    padding: 10px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdownMenu button:hover {
+    background-color: #f0f0f0;
+}
+
+
+.avatarCircle {
+    width: 50px;
+    height: 48px;
+    background: linear-gradient(135deg, #0070d2, #005bb5);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 16px;
+    margin-top:22px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.avatarCircle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}

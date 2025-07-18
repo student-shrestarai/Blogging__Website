@@ -1,0 +1,47 @@
+.hero2Container {
+  width: 100%;
+  padding: 100px 20px;
+  height:300px;
+  background-color: #f4f4f4;
+  text-align: center;
+  /* background-color: bisque; */
+}
+
+.hero2Container h2 {
+  font-size: 2.5rem;
+  color: #0D2937;
+  margin-bottom: 20px;
+  font-family: "Georgia", "Palatino Linotype", "Times New Roman", serif;
+font-weight: 600;
+text-transform: none;
+word-spacing: 12px;
+}
+
+.hero2Container p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.regBox{
+    width:289px;
+    height:59.6px;
+    background-color :#0D2937 ;
+    height:50px;
+    margin-top:50px;
+    color:#f4f4f4 ;
+    font-family:'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;   ;
+    font-size:16px;
+    text-transform:uppercase;
+    border-radius: 999px; 
+    border-color:none;
+    border-style: none;
+}
+
+
+.regBox:hover{
+    background-color: darkorange;
+
+}

@@ -1,0 +1,136 @@
+
+/* Center the container on the screen */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+/* Card structure for the form */
+.user-container {
+    background: #ffffff;
+    min-width: 580px;
+    min-height: 500px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    overflow-y: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top:100px;
+}
+
+.user-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.user-container h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.7rem;
+    color: #333333;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.user-label {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 5px;
+   
+     text-align: left; 
+}
+
+.user-input,
+.user-select {
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.2s, box-shadow 0.2s;
+    width:80%;
+}
+
+.user-input:focus,
+.user-select:focus {
+    border-color: #0070d2;
+    box-shadow: 0 0 0 2px rgba(0, 112, 210, 0.15);
+    outline: none;
+}
+
+.user-button {
+    padding: 11px;
+    background: #0070d2;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width:60%;
+    transition: background 0.3s, transform 0.2s;
+    margin-left:80px;
+    margin-top:15px;
+}
+
+.user-button:hover {
+    background: #005bb5;
+    transform: translateY(-1px);
+}
+
+.user-button:active {
+    background: #004999;
+    transform: translateY(0);
+}
+
+.login-button {
+    background: #28a745;
+}
+
+.login-button:hover {
+    background: #218838;
+}
+
+.login-button:active {
+    background: #1e7e34;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 0.92rem;
+    color: #555555;
+    margin: 0;
+    margin-left:0px;
+    margin-bottom:0px;
+}
+
+@media (max-width: 500px) {
+    .user-container {
+        padding: 20px 15px;
+        min-height: auto;
+    }
+}

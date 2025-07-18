@@ -1,0 +1,104 @@
+.editContainer{
+    margin-bottom:300px;
+    margin-top:150px;
+    margin-left:450px;
+}
+
+.editContainer {
+    max-width: 1000px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.editContainer h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #333333;
+}
+
+.editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.editForm input[type="text"],
+.editForm input[type="email"],
+.editForm textarea {
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.coverImage{
+    height:250px;
+}
+
+.editForm input[type="text"]:focus,
+.editForm input[type="email"]:focus,
+.editForm textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.mainContent{
+    height:500px;
+}
+
+.editForm textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.coverPreview {
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    align-self: center;
+    margin-top: -5px;
+}
+
+.editForm button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.editForm button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.editForm button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+    .editContainer {
+        margin: 30px 20px;
+        padding: 20px;
+    }
+
+    .editContainer h1 {
+        font-size: 24px;
+    }
+
+    .coverPreview {
+        height: 120px;
+    }
+}

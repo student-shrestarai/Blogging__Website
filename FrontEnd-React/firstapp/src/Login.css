@@ -1,0 +1,115 @@
+Login.css
+
+.auth-body{
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.login-container {
+    background: #ffffff;
+    width: 450px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+     margin-top:100px;
+}
+
+.login-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.login-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    color: #333333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-label {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 5px;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.login-input {
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.2s, box-shadow 0.2s;
+    width:90%;
+}
+
+.login-input:focus {
+    border-color: #0070d2;
+    box-shadow: 0 0 0 2px rgba(0, 112, 210, 0.15);
+    outline: none;
+}
+
+.login_button , .reg_button {
+    padding: 12px;
+    background: #0070d2;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width:90%;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.reg_button{
+     background: #28a745;
+
+
+}
+
+.login-button:hover {
+    background: #005bb5;
+    transform: translateY(-1px);
+}
+
+.login-button:active {
+    background: #004999;
+    transform: translateY(0);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+    .login-container {
+        padding: 20px 15px;
+    }
+}
